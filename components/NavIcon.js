@@ -5,7 +5,7 @@ function NavIcon({ Icon, link, active }) {
   return (
     <Link href={link}>
       <a
-        className={`py-2 inline-block md:hover:bg-green-100   px-3 md:px-5 lg:px-7 ${
+        className={`transition ease-in duration-200 py-2 border-b-2 inline-block md:hover:bg-green-100   px-3 md:px-5 lg:px-7 ${
           active ? " border-green-500 border-b-2 " : ""
         }`}
       >
