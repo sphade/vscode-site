@@ -6,7 +6,7 @@ function Layout({ children }) {
   return (
     <div  >
       <Navbar />
-      <main className='bg-gray-600'>{children}</main>
+      <main className=''>{children}</main>
       <Footer />
     </div>
   );
