@@ -5,12 +5,12 @@ import { ChatIcon, BellIcon, UserCircleIcon } from "@heroicons/react/outline";
 import NavIcon from "./NavIcon";
 function Navbar() {
   return (
-    <header className="grid grid-cols-1 sm:flex items-center px-3 shadow  justify-between">
+    <header className="sticky z-10 top-0 left-0 bg-green-50 sm:flex items-center px-3 shadow  justify-between">
       <div className=" flex items-center justify-between space-x-4 md:space-x-2">
         <span className="px-3 py-1 bg-green-500 inline-block font-black text-gray-100 text-2xl rounded-md">
           w
         </span>
-        <form className="flex items-center bg-green-50  p-2 rounded-md  ">
+        <form className="flex items-center bg-gray-50  p-2 rounded-md  ">
           <SearchIcon className="text-green-500 w-6 h-6 cursor-pointer" />
           <input
             type="text"
@@ -19,8 +19,8 @@ function Navbar() {
           />
         </form>
       </div>
-      <div className="flex sm:contents">
-        <div className="  flex items-center  justify-between    flex-grow sm:justify-center space-x-2 ">
+      <div className="flex sm:contents ">
+        <div className="  flex items-center  justify-between    flex-grow sm:justify-center md:space-x-2 ">
           <NavIcon Icon={HomeIcon} link="/" active />
           <NavIcon Icon={ChatIcon} link="/" />
           <NavIcon Icon={BellIcon} link="/" />
@@ -34,7 +34,7 @@ function Navbar() {
               ADEBOLA
             </span>
           </h5>
-          <ChevronDownIcon className="  w-6 h-6 sm:h-7 sm:w-7 md:w-8 md:h-8 lg:w-9 lg:h-9  bg-green-500 rounded-full" />
+          <ChevronDownIcon className="  w-6 h-6 sm:h-7 sm:w-7 md:w-8 md:h-8 lg:w-9 lg:h-9  bg-green-700 text-gray-200 rounded-full" />
         </div>
       </div>
     </header>
