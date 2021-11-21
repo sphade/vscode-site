@@ -1,6 +1,7 @@
 import React from "react";
 import { SearchIcon, HomeIcon, ChevronDownIcon } from "@heroicons/react/solid";
 import { ChatIcon, BellIcon, UserCircleIcon } from "@heroicons/react/outline";
+import Link from 'next/link'
 
 import NavIcon from "./NavIcon";
 function Navbar() {
@@ -10,14 +11,17 @@ function Navbar() {
         <span className="px-3 py-1 bg-green-500 inline-block font-black text-gray-100 text-2xl rounded-md">
           w
         </span>
-        <form className="flex items-center bg-green-100  p-2 rounded-full md:rounded-lg ">
+        <Link href='/SearchPage'>
+        
+        <a className="flex items-center bg-green-100  p-2 rounded-full md:rounded-lg ">
           <SearchIcon className="text-green-500 w-6 h-6 cursor-pointer" />
           <input
-            type="text"
-            placeholder="search naijawave"
-            className=" focus-within:outline-none bg-transparent px-2 hidden lg:block"
+          type="text"
+          placeholder="search naijawave"
+          className=" focus-within:outline-none bg-transparent px-2 hidden lg:block"
           />
-        </form>
+          </a>
+          </Link>
       </div>
       <div className="flex sm:contents ">
         <div className="  flex items-center  justify-between overflow-auto    flex-grow sm:justify-center  ">

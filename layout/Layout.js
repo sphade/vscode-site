@@ -6,7 +6,7 @@ function Layout({ children }) {
   return (
     <div  >
       <Navbar />
-      <main className='bg-gray-200'>{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}{children}</main>
+      <main className='bg-gray-100 font-san'>{children}</main>
       <Footer />
     </div>
   );
