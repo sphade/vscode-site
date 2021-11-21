@@ -2,6 +2,7 @@ import Head from "next/head";
 import { AtSymbolIcon, HashtagIcon } from "@heroicons/react/solid";
 import SubForum from "../components/SubForum";
 import Layout from "../layout/Layout";
+import Thread from "../components/Thread";
 
 export default function Home() {
   return (
@@ -16,10 +17,29 @@ export default function Home() {
         <div className="rounded-md text-xs mb-5 sm:h-screen sm:overflow-auto  border sm:w-64 divide-y-2 divide-gray-300   ">
           <SubForum />
         </div>
-        <div className="flex-grow  bg-gray-50 shadow rounded-lg flex flex-wrap">
-        
+        <div className="flex-grow  flex flex-col  ">
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
+        <Thread/>
         </div>
-        <div className=" h-52 bg-green-50 ">that my name</div>
+        <div className=" h-52 bg-green-50 hidden sm:block">that my name</div>
       </div>
     </div>
   );

@@ -6,66 +6,95 @@ function SubForum() {
   const [general, setGeneral] = useState([
     {
       name: "politics",
-      link: "/politics",
+      link: "/category/politics",
+      as:'/category/polituics'
     },
     {
       name: "Crime",
-      link: "/crime",
+      link: "/category/crime",
+      as:'crime'
+
     },
     {
       name: "Business",
-      link: "/business",
+      link: "/category/business",
+      as:'crime'
+
     },
     {
       name: "crypto",
-      link: "/crypto",
+      link: "/category/crypto",
+      as:'crime'
+
     },
     {
       name: "crypto",
-      link: "/crypto",
+      link: "/category/crypto",
+      as:'crime'
+
     },
     {
       name: "Cars",
-      link: "/cars",
+      link: "/category/cars",
+      as:'crime'
+
     },
     {
       name: "sales",
-      link: "/sales",
+      link: "/category/sales",
+      as:'crime'
+
     },
     {
       name: "Art",
-      link: "/art",
+      link: "/category/art",
+      as:'crime'
+
     },
     {
       name: "Animal/Pet",
-      link: "/Animals",
+      link: "/category/Animals",
+      as:'crime'
+
     },
   ]);
 
   const [entertainment, setEntertainment] = useState([
     {
       name: "celebrities",
-      link: "/celebrities",
+      link: "/category/celebrities",
+      as:'crime'
+
     },
     {
       name: "music",
-      link: "/music",
+      link: "/category/music",
+      as:'crime'
+
     },
     {
       name: "anime",
-      link: "/anime",
+      link: "/category/anime",
+      as:'crime'
+
     },
     {
       name: "tv-series",
-      link: "/tv-series",
+      link: "/category/tv-series",
+      as:'crime'
+
     },
     {
       name: "romance",
-      link: "/romance",
+      link: "/category/romance",
+      as:'crime'
+
     },
     {
       name: "Stories",
-      link: "/stories",
+      link: "/category/stories",
+      as:'crime'
+
     },
     
   ]);
@@ -74,8 +103,8 @@ function SubForum() {
       <div className='py-1'>
         <h2 className="font-black  sm:text-xl text-green-900">General</h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {general.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {general.map(({ name, link,as }) => (
+            <SubForumLink name={name} link={link} as={ as}/>
           ))}
         </div>
       </div>
@@ -85,8 +114,8 @@ function SubForum() {
           entertainment
         </h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {entertainment.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {entertainment.map(({ name, link,as }) => (
+            <SubForumLink name={name} link={link} as={ as}/>
           ))}
         </div>
       </div>
@@ -96,8 +125,8 @@ function SubForum() {
           Tech
         </h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {general.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {general.map(({ name, link,as }) => (
+            <SubForumLink name={name} link={link} as={ as}/>
           ))}
         </div>
       </div>
@@ -107,8 +136,8 @@ function SubForum() {
           jobs
         </h2>
         <div className=" flex flex-row sm:flex-col flex-wrap ">
-          {general.map(({ name, link }) => (
-            <SubForumLink name={name} link={link} />
+          {general.map(({ name, link,as }) => (
+            <SubForumLink name={name} link={link} as={ as}/>
           ))}
         </div>
       </div>
