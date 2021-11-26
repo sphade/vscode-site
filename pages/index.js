@@ -3,8 +3,114 @@ import { AtSymbolIcon, HashtagIcon } from "@heroicons/react/solid";
 import SubForum from "../components/SubForum";
 import Layout from "../layout/Layout";
 import Thread from "../components/Thread";
+import { useState } from "react";
+import BannerAd from "../components/BannerAd";
 
 export default function Home() {
+  const [data, setData] = useState([
+    {
+      name: "lawal",
+      topic: "array0",
+      views: "301211",
+      img: "/../public/poller.png",
+    },
+    {
+      name: "adebola",
+      topic: "array1",
+      views: "30221312",
+      img: "/../public/mobile-1.JPG",
+    },
+    {
+      name: "fawaz",
+      topic: "array2",
+      views: "301334",
+      img: "/../public/2763.jpg",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "3",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "4",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "5",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "6",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "7",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "8",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "9",
+      views: "200",
+      img: "/../public/vercel.svg",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "10",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "11",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "12",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "13",
+      views: "200",
+      img: "/../public/trillo.JPG",
+    },
+    {
+      name: "loloueee",
+      topic:
+        "14",
+      views: "200",
+      img: "/../public/15880.jpg",
+    },
+  ]);
   return (
     <div>
       <Head>
@@ -14,30 +120,17 @@ export default function Home() {
       </Head>
 
       <div className="  border flex flex-col sm:flex-row gap-10 pt-4 mb-5 sm:px-5">
-        <div className="rounded-md text-xs mb-5 sm:h-screen sm:overflow-auto  border sm:w-64 divide-y-2 divide-gray-300   ">
+        <div className="rounded-md text-xs mb-5 sm:h-screen sm:overflow-auto  border sm:w-64 divide-y-2 divide-gray-300 sticky top-24  ">
           <SubForum />
         </div>
-        <div className="flex-grow  flex flex-col  ">
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
-        <Thread/>
+        <div className="flex-grow  flex flex-col pt-10 border bg-gray-200 z-10 ">
+          {data.slice(0, 10).map(({ name, topic, views, img }) => (
+            <Thread img={img} topic={topic} views={views} name={name} />
+          ))}
+          {<BannerAd link="https://lawal.com" img="/../public/adimg.JPG" />}
+          {data.slice(10).map(({ name, topic, views, img }) => (
+            <Thread img={img} topic={topic} views={views} name={name} />
+          ))}
         </div>
         <div className=" h-52 bg-green-50 hidden sm:block">that my name</div>
       </div>
@@ -46,5 +139,5 @@ export default function Home() {
 }
 
 Home.getLayout = function getLayout(page) {
-  return( <Layout>{page}</Layout>);
+  return <Layout>{page}</Layout>;
 };

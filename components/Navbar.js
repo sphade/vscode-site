@@ -6,7 +6,7 @@ import Link from 'next/link'
 import NavIcon from "./NavIcon";
 function Navbar() {
   return (
-    <header className="sticky z-10 top-0 left-0 bg-green-50 sm:flex items-center px-3 md:px-3 shadow  justify-between">
+    <header className="sticky z-20 top-0 left-0 bg-green-50 sm:flex items-center px-3 md:px-3 shadow  justify-between">
 <Link  href={{
   pathname: '/[second]',
   query: { second: '/whatever' },
