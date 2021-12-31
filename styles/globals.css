@@ -2,3 +2,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  :root {
+    --primary: #282c35;
+    --secondary: #21242b;
+    --tertiary: #6b7280;
+    --vsb: #4b79c6;
+    --tag: #f87171;
+    --class: #ec905b;
+    --cname: #34d399;
+    --word: #d1d5db;
+  }
+  [data-theme="owl"] {
+    --primary: #011627;
+    --secondary: #01131F;
+    --tertiary: #6b7280;
+    --vsb: #4b79c6;
+    --tag: #AEC9B9;
+    --class: #828C69;
+    --cname: #EAC8AC;
+    --word: #d1d5db;
+  }
+  [data-theme="owl-light"] {
+    --primary: #FBFBFB;
+    --secondary: #F0F0F0;
+    --tertiary: #44475B;
+    --vsb: #413F55;
+    --tag: #8963B3;
+    --class: #6187E5;
+    --cname: #EBB3B3;
+    --word: #45444A;
+  }
+  [data-theme="github"] {
+    --primary: #c9abc8;
+    --secondary: #21642b;
+    --tertiary: #6b7280;
+    --vsb: #4b79c6;
+    --tag: #f87171;
+    --class: #ec905b;
+    --cname: #34d399;
+    --word: #d1d5db;
+  }
+  .star {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%, 0% 0%);
+  }
+  .ACTIVECLASS {
+    background: red;
+  }
+
+  @font-face {
+    font-family: "italianno";
+    src: local("Italianno.ttf"), url(/fonts/Italianno.ttf) format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Patrick";
+    src: local("Patrick.ttf"), url(/fonts/Patrick.ttf) format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .layout-spacing {
+    @apply  max-w-6xl   m-auto w-full mt-20 px-5 md:px-10 pb-40;
+  }
+}

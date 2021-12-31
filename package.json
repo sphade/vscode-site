@@ -10,10 +10,17 @@
   "dependencies": {
     "@heroicons/react": "^1.0.5",
     "@reduxjs/toolkit": "^1.6.2",
+    "axios": "^0.24.0",
+    "daisyui": "^1.19.0",
     "formik": "^2.2.9",
+    "framer-motion": "^5.5.5",
+    "moment": "^2.29.1",
     "next": "12.0.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "reading-time": "^1.5.0",
+    "theme-change": "^2.0.2",
+    "typeit-react": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
