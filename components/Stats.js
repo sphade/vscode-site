@@ -12,7 +12,7 @@ const Stats = () => {
         <div className="stat-desc "> ↗︎400 (22%)</div>
       </div>
       <div className="stat text-word bg-green-500 place-items-center place-content-center">
-        <div className="stat-title">Coffe Cunsumption</div>
+        <div className="stat-title">Coffee Consumption</div>
         <div className="stat-value ">1,200</div>
         <div className="stat-desc ">↗︎ 90 (14%)</div>
       </div>

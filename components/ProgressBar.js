@@ -7,7 +7,7 @@ const ProgressBar = ({ skill, percent, color }) => {
       <div className="bg-tertiary w-full h-1 ">
         <motion.div
           initial={{ width: 0 }}
-          animate={{ width: percent }}
+          whileInView={{ width: percent }}
           transition={{ duration: 2, ease: "linear" }}
           className={`${color}  h-full`}
         ></motion.div>

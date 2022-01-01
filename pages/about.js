@@ -5,7 +5,7 @@ import  Head  from "next/head";
 
 const about = () => {
   return (
-    <div className="text-word w-screen space-x-5 flex flex-col md:flex-row justify-between layout-spacing ">
+    <div className="text-word w-full space-x-5 flex flex-col lg:flex-row justify-between layout-spacing ">
       <Head>
         <title>About me</title>
         <meta name="description" content="lawal Adebola portfolio website" />
@@ -29,7 +29,7 @@ const about = () => {
           bWord
         />
       </div>
-      <div className=" flex-1 space-y-10 w-full self-center">
+      <div className=" flex-1 space-y-10 w-[80vw] self-center">
         <ProgressBar skill="react.js" percent="90%" color="bg-tag" />
         <ProgressBar skill="Next.js" percent="95%" color="bg-cname" />
         <ProgressBar skill="Node" percent="70%" color="bg-class" />

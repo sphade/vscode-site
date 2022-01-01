@@ -21,26 +21,29 @@ export default function Home() {
   const singleCode = {
     hidden: {
       opacity: 0,
-      x: 100,
+     scale:0
+    
     },
     show: {
       opacity: 1,
-      x: 0,
+     scale:1
+      
     },
   };
   return (
-    <div className=" bg-red-900 text-word min-w-full">
+    <div className="  text-word min-w-full">
       <Head>
         <title>Lawal Adebola</title>
         <meta name="description" content="lawal Adebola portfolio website" />
       </Head>
 
-      <div className=" flex lg:flex-row flex-col justify-center lg:justify-between layout-spacing items-center">
+      <div className="relative flex lg:flex-row flex-col justify-center lg:justify-between layout-spacing items-center">
         <motion.div
           className="space-y-20 md:space-y-5   md:mr-14"
           variants={container}
           animate="show"
           initial="hidden"
+          layout
         >
           <motion.div variants={singleCode}>
             <Code
@@ -60,24 +63,22 @@ export default function Home() {
               bWord
             />
           </motion.div>
-{
-//  <motion.div variants={singleCode}>
-//             <MockupCode />
-//           </motion.div>
-            
-}
+
         </motion.div>
 
         <div className="flex flex-col gap-7 mt-5 ">
           <Buttons
             title="download resume"
             description="download pdf copy of my resume "
+            href='/about'
           />
           <Buttons
-            title="let have a chat"
-            description="chat with the Lawal-Chat-Bot  (Ai version of me)"
+            title="say hi"
+              description="send a mail to me, i usually respond within the next 24hrs"
+              href='mailto:sphade012@gmail.com.com'
           />
-        </div>
+          </div>
+        
       </div>
     </div>
   );

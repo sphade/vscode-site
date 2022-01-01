@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const PostCard = ({ id, topic, publishedAt, author, content }) => {
   const time = readingTime(content);
+  const contentSplit = content.split(" ", 41).join(" ");
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -29,14 +30,11 @@ const PostCard = ({ id, topic, publishedAt, author, content }) => {
         </p>
       </div>
 
-      <h1 className="text-xl break-words ">
-        {content.split(" ", 21).join(" ")}...
-      </h1>
       <div className="flex items-center justify-between">
         <h2>Writter :{author}</h2>
 
-        <Link href={`/blog/${id}`}>
-          <a className="px-5 py-2 text-lg  border font-black">read more...</a>
+        <Link  href={`/blog/${id}`}>
+          <a className="px-5 py-2 text-lg  border font-black">read</a>
         </Link>
       </div>
     </motion.div>

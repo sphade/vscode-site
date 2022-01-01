@@ -23,42 +23,49 @@ function Header() {
     }
     return page;
   };
-  const ListItem = ({ content, Icon, red }) => {
+  const ListItem = ({ content, Icon, red, href }) => {
     return (
-      <div
+      <a
         className={`capitalize    ${red && " group hover:bg-red-500"}
           ${!red && "  hover:bg-gray-700"}
           text-gray-400  p-2 cursor-pointer`}
+        href={href}
       >
         {Icon && (
           <div className={`h-6 w-6  group-hover:text-white`}>{Icon}</div>
         )}
 
         {content}
-      </div>
+      </a>
     );
   };
   return (
-    <div className=" bg-primary border-gray-700 border-b z-[999] inset-0 sticky flex items-center justify-between md:justify-between font-sans px-3">
+    <div className=" bg-primary border-gray-700 border-b z-[999] inset-0 sticky flex items-center justify-around  font-sans px-3">
       <div className="flex items-center justify-between   flex-1 ">
         <CodeIcon className="h-7 w-10 text-blue-600 " />
 
-        <ListItem content="Github" />
-        <ListItem content="LinkedIn" />
+        <ListItem content="Github" href="https://github.com/sphade" />
+        <ListItem
+          content="LinkedIn"
+          href="https://www.linkedin.com/in/lawaladebola/"
+        />
       </div>
 
       <h1 className="hidden md:block flex-1 text-gray-400 capitalize text-sm text-center">
         {path()}----LAWAL ADEBOLA FAWAZ
       </h1>
 
-      <div className=" md:flex items-center  flex-1  justify-end ">
-      
-        <select data-choose-theme   className="  divide-y-2 bg-blue-600 text-white font-black shadow-md bg-opacity-100 rounded-lg w-40 px-2 py-1 border-0 outline-none" >
-          <option value="" className="p-3">Default Theme</option>
+      <div className=" flex items-center  flex-1  justify-end ">
+        <select
+          data-choose-theme
+          className="  bg-blue-600 text-white font-bold shadow-md bg-opacity-100 rounded-lg  px-2 py-1 border-0 outline-none"
+        >
+          <option value="" className="p-3">
+            one dark pro
+          </option>
           <option value="owl">owl</option>
           <option value="owl-light">owl-light</option>
         </select>
-       
       </div>
     </div>
   );

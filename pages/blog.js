@@ -1,9 +1,13 @@
 import PostCard from "@components/PostCard";
+import Head from "next/head";
 
 const Blog = ({ data }) => {
-
   return (
     <div className="layout-spacing  ">
+      <Head>
+        <title>My Blog</title>
+        <meta name="description" content="lawal Adebola portfolio website" />
+      </Head>
       <div className="flex md:justify-evenly justify-around gap-10 flex-wrap  w-full ">
         {data.map(({ attributes, id }) => (
           <PostCard

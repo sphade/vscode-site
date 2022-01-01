@@ -37,17 +37,7 @@ const Sidebar = () => {
       tipName: "writing",
       IconName: LibraryIcon,
     },
-    {
-      link: "/chat",
-      tipName: "Ai Chat",
-      IconName: ChatIcon,
-    },
-
-    {
-      link: "/contact",
-      tipName: "contact details",
-      IconName: PhoneIcon,
-    },
+    
   ];
   return (
     <div className="px-5 md:px-0 border-t md:border-t-0 overflow-x-visible z-[200] w-screen md:w-auto justify-between fixed bottom-0 right-0  md:sticky md:top-11 md:left-0 bg-primary flex md:justify-start md:h-screen items-center md:border-r border-gray-700 md:flex-col h-auto">
