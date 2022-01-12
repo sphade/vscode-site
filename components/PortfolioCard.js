@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Buttons from "@components/Buttons";
 
@@ -10,13 +9,11 @@ const PortfolioCard = ({
 
   tech,
 }) => {
-  const src = `http://localhost:1337${image}`;
   return (
     <div className=" w-72 overflow-hidden   font-main shadow-xl relative h-96 rounded-md border-secondary bg-secondary  ">
       <Image
-        loader={() => src}
         unoptimized
-        src={src}
+        src={image}
         width={600}
         height={300}
         alt={image}
