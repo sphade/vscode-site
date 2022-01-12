@@ -1,9 +1,18 @@
 import PortfolioCard from "@components/PortfolioCard";
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
-
-const Portfolio = ({ data, meta }) => {
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+const Portfolio = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+    .get("/post.json")
+    .then((res) => res.data)
+    .then(({ data }) => {
+      setData(data);
+    });
+ 
+  }, []);
   return (
     <div className="  bg-primary layout-spacing ">
       <Head>
@@ -28,15 +37,15 @@ const Portfolio = ({ data, meta }) => {
 
 export default Portfolio;
 
-export async function getStaticProps(context) {
-  try {
-    const res = await fetch(`http://localhost:1337/api/portfolios?populate=*`);
-    const data = await res.json();
-    return {
-      props: {
-        data: data.data,
-        meta: data.meta,
-      },
-    };
-  } catch (err) {}
-}
+// export async function getStaticProps(context) {
+//   try {
+//     const res = await fetch(`http://localhost:1337/api/portfolios?populate=*`);
+//     const data = await res.json();
+//     return {
+//       props: {
+//         data: data.data,
+//         meta: data.meta,
+//       },
+//     };
+//   } catch (err) {}
+// }

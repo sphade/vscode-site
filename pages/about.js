@@ -32,8 +32,8 @@ const about = () => {
       <div className=" flex-1 space-y-10 w-[80vw] self-center">
         <ProgressBar skill="react.js" percent="90%" color="bg-tag" />
         <ProgressBar skill="Next.js" percent="95%" color="bg-cname" />
-        <ProgressBar skill="Node" percent="70%" color="bg-class" />
-        <ProgressBar skill="Express" percent="60%" color="bg-green-700" />
+        <ProgressBar skill="Node" percent="90%" color="bg-class" />
+        <ProgressBar skill="Express" percent="90%" color="bg-green-700" />
         <Stats />
       </div>
     </div>

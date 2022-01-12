@@ -2,9 +2,7 @@ import Head from "next/head";
 import Buttons from "@components/Buttons";
 import Code from "@components/Code";
 import { motion } from "framer-motion";
-import MockupCode from "@components/MockupCode";
-import ProgressBar from "@components/ProgressBar";
-import moment from 'moment'
+
 
 export default function Home() {
   const container = {
@@ -70,7 +68,7 @@ export default function Home() {
           <Buttons
             title="download resume"
             description="download pdf copy of my resume "
-            href='/about'
+            href='AdebolaCv.pdf'
           />
           <Buttons
             title="say hi"

@@ -1,17 +1,11 @@
 import ActiveLink from "./ActiveLink";
 import {
-  ChatIcon,
   CollectionIcon,
-  DocumentDuplicateIcon,
-  DocumentTextIcon,
+ 
   HomeIcon,
-  MoonIcon,
-  PhoneIcon,
+ 
   UserIcon,
-  ChevronDoubleLeftIcon,
-  DeviceMobileIcon,
-  FolderIcon,
-  InboxInIcon,
+ 
   InformationCircleIcon,
   LibraryIcon,
 } from "@heroicons/react/outline";
@@ -32,11 +26,7 @@ const Sidebar = () => {
       tipName: "Portfolio",
       IconName: CollectionIcon,
     },
-    {
-      link: "/blog",
-      tipName: "writing",
-      IconName: LibraryIcon,
-    },
+ 
     
   ];
   return (
