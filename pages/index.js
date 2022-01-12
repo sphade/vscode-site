@@ -73,7 +73,7 @@ export default function Home() {
           <Buttons
             title="say hi"
               description="send a mail to me, i usually respond within the next 24hrs"
-              href='mailto:sphade012@gmail.com.com'
+              href='mailto:sphade012@gmail.com'
           />
           </div>
         
