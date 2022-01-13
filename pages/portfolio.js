@@ -14,7 +14,7 @@ const Portfolio = () => {
  
   }, []);
   return (
-    <div className="  bg-primary layout-spacing ">
+    <div className="  bg-primary layout-spacing h-full">
       <Head>
         <title>my Project</title>
         <meta name="description" content="lawal Adebola portfolio website" />
